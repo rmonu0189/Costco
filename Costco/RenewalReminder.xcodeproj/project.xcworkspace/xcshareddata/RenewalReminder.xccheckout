@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3BBBAFE8-4EDF-47D4-86EC-50EA11973ADD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RenewalReminder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>506446762EAEF85C3EC4A5187C66C9217B29178E</key>
+		<string>https://bitbucket.org/monu90747/a-insurance.git</string>
+		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++6972</key>
+		<string>https://subversion.assembla.com/svn/commonspace/RealBlackLove/IOS/RealBlackLove_Redesign/MyWork/Bitbucker/Grant/A+%25252520Insurance</string>
+		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++9919</key>
+		<string>https://subversion.assembla.com/svn/commonspace/RealBlackLove/IOS/RealBlackLove_Redesign</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>A+ Insurance/RenewalReminder.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>506446762EAEF85C3EC4A5187C66C9217B29178E</key>
+		<string>../../..</string>
+		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++6972</key>
+		<string>../../../../A+%20Insurance</string>
+		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++9919</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++6972</key>
+		<string>https://subversion.assembla.com/svn/commonspace</string>
+		<key>bc292187-4652-424f-b7f1-ee4c49d5ef79++9919</key>
+		<string>https://subversion.assembla.com/svn/commonspace</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/monu90747/a-insurance.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>506446762EAEF85C3EC4A5187C66C9217B29178E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>bc292187-4652-424f-b7f1-ee4c49d5ef79++9919</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>bc292187-4652-424f-b7f1-ee4c49d5ef79++6972</string>
+			<key>IDESourceControlWCCName</key>
+			<string>A+%20Insurance</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>506446762EAEF85C3EC4A5187C66C9217B29178E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>A+%20Reminder</string>
+		</dict>
+	</array>
+</dict>
+</plist>

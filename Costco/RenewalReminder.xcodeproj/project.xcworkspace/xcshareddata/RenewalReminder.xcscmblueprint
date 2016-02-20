@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "506446762EAEF85C3EC4A5187C66C9217B29178E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "506446762EAEF85C3EC4A5187C66C9217B29178E" : 0,
+    "bc292187-4652-424f-b7f1-ee4c49d5ef79++6972" : 0,
+    "bc292187-4652-424f-b7f1-ee4c49d5ef79++9919" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3BBBAFE8-4EDF-47D4-86EC-50EA11973ADD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "506446762EAEF85C3EC4A5187C66C9217B29178E" : "A+%20Reminder",
+    "bc292187-4652-424f-b7f1-ee4c49d5ef79++6972" : "A+%20Insurance",
+    "bc292187-4652-424f-b7f1-ee4c49d5ef79++9919" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RenewalReminder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "A+ Insurance\/RenewalReminder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/monu90747\/a-insurance.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "506446762EAEF85C3EC4A5187C66C9217B29178E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/subversion.assembla.com\/svn\/commonspace",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bc292187-4652-424f-b7f1-ee4c49d5ef79++6972"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/subversion.assembla.com\/svn\/commonspace",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bc292187-4652-424f-b7f1-ee4c49d5ef79++9919"
+    }
+  ]
+}
