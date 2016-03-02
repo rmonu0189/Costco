@@ -68,6 +68,7 @@
     self.txtFirstName.text = self.user.first_name;
     self.txtSurname.text = self.user.surname;
     self.txtEmail.text = self.user.email;
+    self.txtMembership.text = self.user.memberShipNumber;
     self.txtContact.text = self.user.contact;
 }
 
@@ -97,7 +98,7 @@
 - (IBAction)clickedSaveChanges:(id)sender {
     [self resignAllKeypad];
     [[AppDelegate sharedAppDelegate] startLoadingView];
-    [self.connection editUserProfileTitle:self.txtTitle.text FirstName:self.txtFirstName.text Surname:self.txtSurname.text Mobile:self.txtContact.text];
+    [self.connection editUserProfileTitle:self.txtTitle.text FirstName:self.txtFirstName.text Surname:self.txtSurname.text Membership:(NSString *)self.txtMembership.text Mobile:self.txtContact.text];
 }
 
 - (IBAction)clickedBack:(id)sender {
@@ -187,6 +188,9 @@
         [self.txtSurname becomeFirstResponder];
     }
     else if ([textField isEqual:self.txtSurname]){
+        [self.txtMembership becomeFirstResponder];
+    }
+    else if ([textField isEqual:self.txtMembership]){
         [self.txtContact becomeFirstResponder];
     }
     else if ([textField isEqual:self.txtContact]){

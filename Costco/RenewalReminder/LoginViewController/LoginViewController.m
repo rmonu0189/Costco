@@ -197,7 +197,7 @@
                 NSLog(@"Facebook signup");
                 [[AppDelegate sharedAppDelegate] startLoadingView];
                 isRegister = YES;
-                [self.connection registerUserID:[facebookResponse valueForKey:@"id"] Title:@"" FirstName:[facebookResponse valueForKey:@"first_name"] Surname:[facebookResponse valueForKey:@"last_name"] Email:@"" Password:[facebookResponse valueForKey:@"id"] Mobile:@"" andLoginType:@"1"];
+                [self.connection registerUserID:[facebookResponse valueForKey:@"id"] Title:@"" FirstName:[facebookResponse valueForKey:@"first_name"] Surname:[facebookResponse valueForKey:@"last_name"] Email:@"" Password:[facebookResponse valueForKey:@"id"] Mobile:@"" MemberShip:@"" andLoginType:@"1"];
             }
             else if (loginType == 2){
                 NSLog(@"Twitter signup");
@@ -213,7 +213,7 @@
                 }
                 [[AppDelegate sharedAppDelegate] startLoadingView];
                 isRegister = YES;
-                [self.connection registerUserID:[twitterResponse valueForKey:@"id"] Title:@"" FirstName:fname Surname:lname Email:@"" Password:[twitterResponse valueForKey:@"id"] Mobile:@"" andLoginType:@"2"];
+                [self.connection registerUserID:[twitterResponse valueForKey:@"id"] Title:@"" FirstName:fname Surname:lname Email:@"" Password:[twitterResponse valueForKey:@"id"] Mobile:@"" MemberShip:@"" andLoginType:@"2"];
             }
         }
     }

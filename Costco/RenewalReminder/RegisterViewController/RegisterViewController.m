@@ -101,7 +101,7 @@
         [self.scrollViewRegister setContentOffset:CGPointMake(0, 0) animated:YES];
         self.requestType = 1;
         [[AppDelegate sharedAppDelegate] startLoadingView];
-        [self.connection registerUserID:self.txtEmail.text Title:self.txtTitle.text FirstName:self.txtFirstName.text Surname:self.txtSurname.text Email:self.txtEmail.text Password:self.txtPassword.text Mobile:self.txtMobile.text andLoginType:@"0"];
+        [self.connection registerUserID:self.txtEmail.text Title:self.txtTitle.text FirstName:self.txtFirstName.text Surname:self.txtSurname.text Email:self.txtEmail.text Password:self.txtPassword.text Mobile:self.txtMobile.text MemberShip:self.btnMemberShip.text andLoginType:@"0"];
     }
 }
 
@@ -120,7 +120,7 @@
 }
 
 - (IBAction)clickedOpenTerms:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.aplusinsurance.co.uk/app/terms/"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.costcocompare.co.uk/app/terms"]];
 }
 
 - (void)requestResultSuccess:(id)response andError:(NSError *)error{
@@ -180,6 +180,9 @@
         [self.txtSurname becomeFirstResponder];
     }
     else if ([self.txtSurname isEqual:textField]) {
+        [self.btnMemberShip becomeFirstResponder];
+    }
+    else if ([self.btnMemberShip isEqual:textField]) {
         [self.txtEmail becomeFirstResponder];
     }
     else if ([self.txtEmail isEqual:textField]) {

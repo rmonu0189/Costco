@@ -30,6 +30,7 @@
 		B5C6D7CA1AB85BC900FE45DC /* imgSettingIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5C6D7C31AB85BC900FE45DC /* imgSettingIcon@2x.png */; };
 		B5D445B81AB7F0C00058A7E6 /* imgChangePassLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D445B61AB7F0C00058A7E6 /* imgChangePassLabel.png */; };
 		B5D445BA1AB7F0C00058A7E6 /* imgChangePassLabel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D445B71AB7F0C00058A7E6 /* imgChangePassLabel@2x.png */; };
+		F3716FD21C7AE7C8008EA25C /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3716FD11C7AE7C8008EA25C /* HockeySDK.framework */; };
 		FA0CC0BC1AC9BB9B00AC70EA /* btnFacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0CC0B41AC9BB9B00AC70EA /* btnFacebook.png */; };
 		FA0CC0BE1AC9BB9B00AC70EA /* btnFacebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0CC0B51AC9BB9B00AC70EA /* btnFacebook@2x.png */; };
 		FA12DC811A7678A60038CBDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12DC801A7678A60038CBDF /* Foundation.framework */; };
@@ -121,6 +122,7 @@
 		B5C6D7C31AB85BC900FE45DC /* imgSettingIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgSettingIcon@2x.png"; sourceTree = "<group>"; };
 		B5D445B61AB7F0C00058A7E6 /* imgChangePassLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgChangePassLabel.png; sourceTree = "<group>"; };
 		B5D445B71AB7F0C00058A7E6 /* imgChangePassLabel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imgChangePassLabel@2x.png"; sourceTree = "<group>"; };
+		F3716FD11C7AE7C8008EA25C /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		FA0CC0B41AC9BB9B00AC70EA /* btnFacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnFacebook.png; sourceTree = "<group>"; };
 		FA0CC0B51AC9BB9B00AC70EA /* btnFacebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnFacebook@2x.png"; sourceTree = "<group>"; };
 		FA12DC7D1A7678A60038CBDF /* RenewalReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenewalReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +212,7 @@
 			files = (
 				5475EC501B5D473400713537 /* Social.framework in Frameworks */,
 				FA12DC831A7678A60038CBDF /* CoreGraphics.framework in Frameworks */,
+				F3716FD21C7AE7C8008EA25C /* HockeySDK.framework in Frameworks */,
 				92341D921A7FB92800F38390 /* FacebookSDK.framework in Frameworks */,
 				FA12DC851A7678A60038CBDF /* UIKit.framework in Frameworks */,
 				FA12DC811A7678A60038CBDF /* Foundation.framework in Frameworks */,
@@ -264,6 +267,14 @@
 			path = TourViewController;
 			sourceTree = "<group>";
 		};
+		F3716FD01C7AE7C8008EA25C /* HockeySDKCrashOnly */ = {
+			isa = PBXGroup;
+			children = (
+				F3716FD11C7AE7C8008EA25C /* HockeySDK.framework */,
+			);
+			path = HockeySDKCrashOnly;
+			sourceTree = "<group>";
+		};
 		FA12DC741A7678A60038CBDF = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +295,7 @@
 		FA12DC7F1A7678A60038CBDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3716FD01C7AE7C8008EA25C /* HockeySDKCrashOnly */,
 				5475EC4F1B5D473400713537 /* Social.framework */,
 				92341D911A7FB92800F38390 /* FacebookSDK.framework */,
 				FA12DC801A7678A60038CBDF /* Foundation.framework */,
@@ -812,6 +824,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDKCrashOnly",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RenewalReminder/RenewalReminder-Prefix.pch";
@@ -836,6 +849,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HockeySDKCrashOnly",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RenewalReminder/RenewalReminder-Prefix.pch";

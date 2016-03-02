@@ -33,10 +33,10 @@
         [self setFirst_name:[_dict objectForKey:@"firstname"]];
         [self setSurname:[_dict objectForKey:@"surname"]];
         [self setEmail:[_dict objectForKey:@"email"]];
-        //[self setPassword:[_dict objectForKey:@"user_password"]];
         [self setContact:[_dict objectForKey:@"contact"]];
         [self setLoginID:[_dict objectForKey:@"email"]]; //TODO: change email with Login ID
         [self setLogin_type:[_dict objectForKey:@"user_type"]];
+        [self setMemberShipNumber:[_dict objectForKey:@"membershipNumber"]];
     }
     return self ;
     
@@ -54,6 +54,7 @@
     [encoder encodeObject:self.contact          forKey:@"user_contact"];
     [encoder encodeObject:self.loginID          forKey:@"user_login_id"];
     [encoder encodeObject:self.login_type       forKey:@"user_login_type"];
+    [encoder encodeObject:self.memberShipNumber       forKey:@"membershipNumber"];
 }
 
 -(id)initWithCoder:(NSCoder *)decoder
@@ -72,6 +73,7 @@
         self.contact        = [decoder decodeObjectForKey:@"user_contact"];
         self.loginID        = [decoder decodeObjectForKey:@"user_login_id"];
         self.login_type     = [decoder decodeObjectForKey:@"user_login_type"];
+        self.memberShipNumber     = [decoder decodeObjectForKey:@"membershipNumber"];
     }
     return self;
 }

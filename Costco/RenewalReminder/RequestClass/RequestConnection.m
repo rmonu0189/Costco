@@ -36,6 +36,7 @@
                  Email:(NSString *)email
               Password:(NSString *)password
                 Mobile:(NSString *)mobile
+            MemberShip:(NSString *)memberShip
           andLoginType:(NSString *)loginType{
     
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
@@ -46,6 +47,7 @@
     [param setValue:email forKeyPath:@"email"];
     [param setValue:password forKeyPath:@"password"];
     [param setValue:mobile forKeyPath:@"contact"];
+    [param setValue:memberShip forKeyPath:@"memberShipNumber"];
     [param setValue:loginID forKeyPath:@"loginID"];
     [param setValue:loginType forKeyPath:@"login_type"];
     [self makePostRequestWithParam:param];
@@ -141,13 +143,14 @@
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
     [param setValue:@"GET_RENEWAL_LIST" forKeyPath:@"action"];
     [param setValue:[AppDelegate sharedAppDelegate].me.userID forKeyPath:@"uid"];
-    [param setValue:@"2" forKeyPath:@"app_type"];
+    [param setValue:@"3" forKeyPath:@"app_type"];
     [self makePostRequestWithParam:param];
 }
 
 - (void)editUserProfileTitle:(NSString *)title
                    FirstName:(NSString *)fName
                      Surname:(NSString *)surname
+                  Membership:(NSString *)membership
                       Mobile:(NSString *)mobile{
     
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
@@ -156,6 +159,7 @@
     [param setValue:title forKeyPath:@"title"];
     [param setValue:fName forKeyPath:@"first_name"];
     [param setValue:surname forKeyPath:@"surname"];
+    [param setValue:membership forKey:@"memberShipNumber"];
     [param setValue:mobile forKeyPath:@"contact"];
     [self makePostRequestWithParam:param];
 }
@@ -172,7 +176,7 @@
 - (void)getTypeAndCategory{
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
     [param setValue:@"GET_TYPE_CATEGORY" forKeyPath:@"action"];
-    [param setValue:@"2" forKeyPath:@"app_type"];
+    [param setValue:@"3" forKeyPath:@"app_type"];
     [self makePostRequestWithParam:param];
 }
 
@@ -181,7 +185,7 @@
     for (NSString *aKey in [param allKeys]) {
         parameterString = [parameterString stringByAppendingFormat:@"&%@=%@",aKey,[param valueForKey:aKey]];
     }
-    parameterString = [parameterString stringByAppendingFormat:@"&%@=%@",@"2",@"brand"];
+    parameterString = [parameterString stringByAppendingFormat:@"&%@=%@",@"brand",@"3"];
     NSData *postData = [parameterString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];

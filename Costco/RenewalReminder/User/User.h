@@ -18,6 +18,7 @@
 @property (nonatomic, retain) NSString * contact;
 @property (nonatomic, retain) NSString * loginID;
 @property (nonatomic, retain) NSString * login_type;
+@property (nonatomic, retain) NSString * memberShipNumber;
 
 + ( id ) me;
 - ( id ) initWithDict : ( NSDictionary* ) _dict ;

@@ -124,7 +124,7 @@
 }
 
 - (IBAction)clickedTermsOfUse:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.costcompare.co.uk/terms-of-use"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.costcocompare.co.uk/app/terms"]];
 }
 
 

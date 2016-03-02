@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewRegister;
 @property (weak, nonatomic) IBOutlet UIPickerView *titlePicker;
 @property (weak, nonatomic) IBOutlet UIButton *btnTerms;
+@property (weak, nonatomic) IBOutlet UITextField *btnMemberShip;
 
 - (IBAction)clickedHome:(id)sender;
 - (IBAction)clickedRegister:(id)sender;

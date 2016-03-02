@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import <HockeySDK/HockeySDK.h>
 
 @implementation AppDelegate
 @synthesize renewalsList30Days,renewalsListOther;
@@ -27,7 +28,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    // Override point for customization after application launch.
+    //-- Crash Reporting by Hockey App
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"504ac465a4b146319992ceedd121a904"];
+    [[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus: BITCrashManagerStatusAutoSend];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    
+    
     self.loadingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
     self.indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     [self.loadingView addSubview:self.indicator];

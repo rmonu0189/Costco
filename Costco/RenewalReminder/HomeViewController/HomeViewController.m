@@ -350,7 +350,7 @@
 }
 
 - (IBAction)clickedNoRecord:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.comparewithus.com/apptour/"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.costcocompare.co.uk/app/tour/"]];
 }
 
 - (IBAction)shareOnFacebook:(id)sender {

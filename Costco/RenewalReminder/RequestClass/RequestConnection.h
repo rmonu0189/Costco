@@ -31,11 +31,13 @@
                  Email:(NSString *)email
               Password:(NSString *)password
                 Mobile:(NSString *)mobile
+            MemberShip:(NSString *)memberShip
           andLoginType:(NSString *)loginType;
 
 - (void)editUserProfileTitle:(NSString *)title
                    FirstName:(NSString *)fName
                      Surname:(NSString *)surname
+                  Membership:(NSString *)membership
                       Mobile:(NSString *)mobile;
 
 /**

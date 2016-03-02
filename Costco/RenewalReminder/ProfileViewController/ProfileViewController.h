@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerTitle;
 @property (weak, nonatomic) IBOutlet UIView *viewPickerTitle;
 @property (weak, nonatomic) IBOutlet UIButton *btnMenu;
+@property (weak, nonatomic) IBOutlet UITextField *txtMembership;
 
 - (IBAction)clickedSaveChanges:(id)sender;
 - (IBAction)clickedBack:(id)sender;
